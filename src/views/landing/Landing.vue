@@ -500,8 +500,10 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 export default {
-  name: "home",
+  name: "landing",
   components: {}
 };
 </script>
