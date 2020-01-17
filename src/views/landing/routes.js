@@ -11,6 +11,6 @@ export default [
       default: Components,
       footer: AppFooter
     },
-    component: () => import(/* webpackChunkName: "home" */ './Landing.vue')
+    component: () => import(/* webpackChunkName: "home" */ './Landing')
   }
 ]
