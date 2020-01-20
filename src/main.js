@@ -1,16 +1,16 @@
 import Vue from "vue";
-import App from "./App.vue";
+import App from "./App";
 import store from './store'
 import router from "./router/router";
 import Argon from "./plugins/argon-kit";
 
 import './registerServiceWorker'
 
-Vue.use(compiler) // enable compiler
+Vue.config.productionTip = false
 Vue.use(Argon);
 
-new Vue({
+window._Vue = new Vue({
   router,
   store,
   render: h => h(App)
-}).$mount("#app")
+}).$mount('#app')

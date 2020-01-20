@@ -6,6 +6,7 @@ import beforeEach from './beforeEach'
 Vue.use(VueRouter)
 
 const router = new Router({ routes })
+
 router.beforeEach(beforeEach)
 
 export default router
